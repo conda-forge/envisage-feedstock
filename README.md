@@ -11,6 +11,18 @@ Summary: extensible application framework
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/envisage-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/envisage-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/envisage-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/envisage-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/envisage-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/envisage-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/envisage/badges/version.svg)](https://anaconda.org/conda-forge/envisage)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/envisage/badges/downloads.svg)](https://anaconda.org/conda-forge/envisage)
+
 Installing envisage
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `envisage` available on your platf
 ```
 conda search envisage --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/envisage-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/envisage-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/envisage-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/envisage-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/envisage-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/envisage-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/envisage/badges/version.svg)](https://anaconda.org/conda-forge/envisage)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/envisage/badges/downloads.svg)](https://anaconda.org/conda-forge/envisage)
 
 
 Updating envisage-feedstock
