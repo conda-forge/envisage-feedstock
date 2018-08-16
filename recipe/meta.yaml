@@ -1,4 +1,4 @@
-{% set version = "4.5.1" %}
+{% set version = "4.7.0" %}
 
 package:
   name: envisage
@@ -7,11 +7,11 @@ package:
 source:
   fn: envisage-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/e/envisage/envisage-{{ version }}.tar.gz
-  md5: 384851e388cbaccf0f6466222fc669d4
+  md5: b27e764b9ab18407dfe52033c913b9e4
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
