@@ -33,6 +33,7 @@ test:
 about:
   home: http://docs.enthought.com/envisage/
   license: BSD 3-clause
+  license_file: LICENSE.txt
   summary: extensible application framework
 
 extra:
