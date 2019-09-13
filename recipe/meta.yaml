@@ -1,4 +1,4 @@
-{% set version = "4.7.2" %}
+{% set version = "4.8.0" %}
 
 package:
   name: envisage
@@ -7,7 +7,7 @@ package:
 source:
   fn: envisage-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/e/envisage/envisage-{{ version }}.tar.gz
-  md5: c15db4e0b4d832ae95acaf30ed088e05
+  md5: 98598c08fe3c969f39a30859413b37f6
 
 build:
   noarch: python
@@ -33,6 +33,7 @@ test:
 about:
   home: http://docs.enthought.com/envisage/
   license: BSD 3-clause
+  license_file: LICENSE.txt
   summary: extensible application framework
 
 extra:
