@@ -1,5 +1,6 @@
 {% set name = "envisage" %}
 {% set version = "7.0.3" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -10,23 +11,23 @@ source:
   sha256: f7b1af88bf3a8fff2a9ac6e36bb48dea9929e3f612204cfe94aed62b0316c9e3
 
 build:
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - wheel
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - apptools
     - pyface
     - setuptools
     - traits >=6.2
     - traitsui
-    - importlib-resources >=1.1.0  # [py<39]
 
 test:
   imports:
@@ -34,6 +35,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
