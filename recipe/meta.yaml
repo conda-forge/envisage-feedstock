@@ -1,34 +1,41 @@
-{% set version = "6.0.1" %}
+{% set name = "envisage" %}
+{% set version = "7.0.3" %}
 
 package:
-  name: envisage
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: envisage-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/e/envisage/envisage-{{ version }}.tar.gz
-  md5: 00d64b4e187c5e77fd95ad66a0fd1191
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/envisage-{{ version }}.tar.gz
+  sha256: f7b1af88bf3a8fff2a9ac6e36bb48dea9929e3f612204cfe94aed62b0316c9e3
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - pip
     - python >=3.6
-    - traits
-    - apptools
     - setuptools
+    - wheel
+    - pip
   run:
-    - python >=3.6
-    - traits
+    - python >=3.7
     - apptools
+    - pyface
+    - setuptools
+    - traits >=6.2
+    - traitsui
+    - importlib-resources >=1.1.0  # [py<39]
 
 test:
   imports:
     - envisage
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://docs.enthought.com/envisage/
