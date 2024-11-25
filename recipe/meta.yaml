@@ -1,6 +1,5 @@
 {% set name = "envisage" %}
 {% set version = "7.0.3" %}
-{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python
     - setuptools
     - wheel
     - pip
   run:
-    - python >={{ python_min }}
+    - python
     - apptools
     - pyface
     - setuptools
@@ -35,7 +34,6 @@ test:
   commands:
     - pip check
   requires:
-    - python {{ python_min }}
     - pip
 
 about:
