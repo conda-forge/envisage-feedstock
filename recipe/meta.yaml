@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apptools
+    - apptools >=5.3
     - pyface
     - setuptools
     - traits >=6.2
