@@ -27,7 +27,8 @@ requirements:
     - python >=${{ python_min }}
     - apptools >=5.3
     - pyface
-    - setuptools
+    # envisage needs pkg_resources
+    - setuptools <82
     - traits >=6.2
     - traitsui
 
